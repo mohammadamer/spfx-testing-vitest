@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-testing-vitest-client-side-solution",
+    "id": "7980854b-3dd2-454b-88e1-b2ee58869be2",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spfx-testing-vitest description"
+      },
+      "longDescription": {
+        "default": "spfx-testing-vitest description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spfx-testing-vitest Feature",
+        "description": "The feature that activates elements of the spfx-testing-vitest solution.",
+        "id": "e7e84b83-f87e-4259-a4fa-66863ab6deb5",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-testing-vitest.sppkg"
+  }
+}

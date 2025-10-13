@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.14.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "spfx-testing-vitest",
+    "libraryId": "7980854b-3dd2-454b-88e1-b2ee58869be2",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "spfx-testing-vitest",
+    "solutionShortDescription": "spfx-testing-vitest description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
