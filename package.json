@@ -9,7 +9,8 @@
   "scripts": {
     "build": "gulp bundle",
     "clean": "gulp clean",
-    "test": "gulp test"
+    "test": "vitest run --coverage",
+    "test:local": "vitest --ui"
   },
   "dependencies": {
     "tslib": "2.3.1",
@@ -30,6 +31,15 @@
     "@microsoft/eslint-config-spfx": "1.21.1",
     "@microsoft/sp-build-web": "1.21.1",
     "@types/webpack-env": "~1.15.2",
+    "vitest": "^2.1.8",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/coverage-v8": "^2.1.8",
+    "@vitest/ui": "^2.1.8",
+    "vite-tsconfig-paths": "^4.2.0",
+    "@testing-library/jest-dom": "5.17",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^14.4.3",
+    "jsdom": "^24.0.0",
     "ajv": "^6.12.5",
     "eslint": "8.57.1",
     "gulp": "4.0.2",
