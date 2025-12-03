@@ -3,13 +3,11 @@ import { defineConfig } from "vitest/config";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-    plugin: [react(), tsconfigPaths()],
-
+    plugins: [react(), tsconfigPaths()] as any,
     test: {
-        globals: true,
-        environment: "jsdom",
-        setupFiles: ["./tests/setupTests.ts"],
-
+        globals: true, // Makes Vitest globals (`describe`, `it`, `expect`) available without imports
+        environment: "jsdom", // Uses jsdom to simulate browser environment for DOM testing
+        setupFiles: ["./tests/setupTests.ts"], // Runs setup file before each test suite
         coverage: {
             enabled: true,
             provider: "v8",
@@ -22,9 +20,10 @@ export default defineConfig({
                 "**/tests/**",
             ],
         },
-
+        
         alias: {
             "@src/": new URL("./src/", import.meta.url).pathname,
+            // Enables clean imports like `@src/webparts/helloWorld/components/HelloWorld`
         },
         
         reporters: ["junit", "default"],

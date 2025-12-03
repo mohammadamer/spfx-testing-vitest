@@ -1,0 +1,317 @@
+{
+  "$schema": "https://demotime.show/demo-time.schema.json",
+  "title": "level up SPFx Projects with Vitest Unit Testing",
+  "description": "A guided demo showing how to add and highlight a new function in a TypeScript file, with themed slides and VS Code integration.",
+  "version": 2,
+  "demos": [
+    {
+      "title": "Intro",
+      "description": "Display the opening slide to introduce the Vitest Unit Testing and set the initial theme.",
+      "steps": [
+        {
+          "action": "setTheme",
+          "theme": "Default Dark Modern"
+        },
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/00-advanced-start.md"
+        }
+      ]
+    },
+    {
+      "title": "Introduce myself",
+      "description": "Show a slide to introduce myself.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/01-introduce-myself.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/01-introduce-myself-notes.md"
+      }
+    },
+    {
+      "title": "Agenda",
+      "description": "Show a slide to outline the agenda for the demo.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/01-agenda.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/00-agenda-notes.md"
+      }
+    },
+    {
+      "title": "Intro to Testing with Vitest",
+      "description": "Show a slide summarizing the steps taken and what was accomplished in the demo.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/02-what-is-vitest.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/02-what-is-vitest-notes.md"
+      }
+    },
+    {
+      "title": "Vitest Features",
+      "description": "A slide to highlight Vitest features.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/03-vitest-features.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/03-vitest-features-notes.md"
+      }
+    },
+    {
+      "title": "Vitest Setup and Configurations",
+      "description": "A slide to highlight Vitest features.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/04-setup-and-configurations.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/04-setup-and-configurations-notes.md"
+      }
+    },
+    {
+      "title": "Vitest - NPM packages",
+      "description": "Vitest NPM packages",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "package.json",
+          "position": "34:42",
+          "zoom": 3
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/05-vitest-npm-packages-notes.md",
+        "showOnTrigger": false
+      }
+    },
+    {
+      "title": "Vitest - Test Command",
+      "description": "Vitest NPM packages",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "package.json",
+          "position": "12:13",
+          "zoom": 3
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/06-test-command-notes.md",
+        "showOnTrigger": false
+      }
+    },
+    {
+      "title": "ts Config tsconfig.json",
+      "description": "tsconfig.json Config File",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "tsconfig.json",
+          "position": "22:24",
+          "zoom": 3
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/07-tsconfig.json-notes.md",
+        "showOnTrigger": false
+      }
+    },
+    {
+      "title": "Vitest vitest.config.ts",
+      "description": "Vitest Configuration File",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "vitest.config.ts",
+          "position": "1:36",
+          "zoom": 3
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/08-vitest-vitest.config.ts-notes.md",
+        "showOnTrigger": false
+      }
+    },
+    {
+      "title": "Vitest setupTests.ts",
+      "description": "Vitest setupTests",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "tests/setupTests.ts",
+          "position": "1:7",
+          "zoom": 3
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/09-Vitest-setupTests.ts-notes.md",
+        "showOnTrigger": false
+      }
+    },
+    {
+      "title": "HelloWorld testing component",
+      "description": "HelloWorld component tests",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "tests/components/HelloWorld.test.tsx",
+          "position": "1:47",
+          "zoom": 3
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/10-helloworld-testing-component-notes.md",
+        "showOnTrigger": false
+      }
+    },
+    {
+      "title": "Demo - Run Tests in Terminal",
+      "steps": [
+        {
+          "action": "openTerminal",
+          "terminalId": "run-tests"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "npm run test",
+          "insertTypingSpeed": 0,
+          "insertTypingMode": "character-by-character",
+          "terminalId": "run-tests"
+        }
+      ]
+    },
+    {
+      "title": "Demo - Run Tests in UI",
+      "steps": [
+        {
+          "action": "openTerminal",
+          "terminalId": "run-tests"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "npm run test:local",
+          "insertTypingSpeed": 0,
+          "insertTypingMode": "character-by-character",
+          "terminalId": "run-tests"
+        }
+      ]
+    },
+    {
+      "title": "Recap - Manual Configurations",
+      "description": "Show a slide summarizing the steps taken and what was accomplished in the demo.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/05-Recap-Vitest-Configurations.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/11-recap-vitest-configurations-notes.md"
+      }
+    },
+    {
+      "title": "Reverse Engineering - Ask GitHub Copilot to Generate Prompt",
+      "description": "Show a slide summarizing the steps taken and what was accomplished in the demo.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/06-Reverser-Engineering-Ask-GitHub-Copilot-to-Generate-Prompt.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/12-reverse-engineering-ask-github-copilot-to-generate-prompt-notes.md"
+      }
+    },
+    {
+      "title": "Demo - Run a Prompt to generate Vitest Configurations prompt file",
+      "steps": [
+        {
+          "action": "agentCopilotChat",
+          "message": "I need to configure **Vitest** for a new **SharePoint Framework (SPFx)** project to enable unit testing. The goal is to set up Vitest unit testing\n\nPlease generate the following required changes for my SPFx solution in a markdown file\n\n1.  **package.json update:** List all necessary development dependencies (e.g., `vitest`, testing utilities, environment setup) that need to be added.\n2.  **tsconfig.json update:** Generate the necessary additions to the `types` array and configuration to ensure proper TypeScript support and intellisense with Vitest.\n3.  **vitest.config.ts file:** Generate the complete content for the new `vitest.config.ts` file, ensuring it handles common SPFx project requirements (e.g., environment, test paths, dependency management).\n4.  **tests/SetupTests.ts file:** Generate the complete content for the new `tests/SetupTests.ts` file, configured for global testing setup in the SPFx environment."
+        }
+      ]
+    },
+    {
+      "title": "Demo - Close the previous prompt and Copilot Chat",
+      "steps": [
+        {
+          "action": "closeCopilotChat"
+        }
+      ]
+    },
+    {
+      "title": "Demo - Add a prompt file",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.chat.run.prompt",
+          "args": "Adding a prompt file to github prompts folder"
+        }
+      ]
+    },
+    {
+      "title": "highlight Configure Vitest Prompt File",
+      "description": "HelloWorld component tests",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": ".github/prompts/vitest-setup.prompt.md",
+          "position": "1:108",
+          "zoom": 3
+        }
+      ]
+    },
+    {
+      "title": "Demo - Open a Copilot Chat and run the Vitest setup prompt",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.chat.attachFile",
+          "args": "Run vitest setup prompt"
+        },
+        {
+          "action": "askCopilotChat",
+          "message": "Follow instructions in vitest-setup.prompt.md"
+        }
+      ]
+    },
+    {
+      "title": "Recap",
+      "description": "Show a slide summarizing the steps taken and what was accomplished in the demo.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/20-advanced-end.md"
+        }
+      ],
+      "notes": {
+        "path": ".demo/notes/20-advanced-end-notes.md"
+      }
+    },
+    {
+      "title": "Links",
+      "description": "Show a slide summarizing the steps taken and what was accomplished in the demo.",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/21-links.md"
+        }
+      ]
+    }
+  ]
+}
